@@ -1,3 +1,12 @@
+echo "Pulling ubuntu prerequiesties "
+curl -O https://hyperledger.github.io/composer/v0.19/prereqs-ubuntu.sh
+
+chmod u+x prereqs-ubuntu.sh
+
+./prereqs-ubuntu.sh
+
+echo "Done with prereq "
+
 echo "Installing Composerprerequisties Essential CLI tools" 
 npm install -g composer-cli@0.19
 
